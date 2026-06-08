@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Sri Lanka</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+
+<header class="hero">
+
+<nav>
+
+<div class="logo">
+🇱🇰 Explore Sri Lanka
+</div>
+
+<ul>
+<li><a href="#destinations">Destinations</a></li>
+<li><a href="#culture">Culture</a></li>
+<li><a href="#food">Food</a></li>
+<li><a href="#wildlife">Wildlife</a></li>
+</ul>
+
+</nav>
+
+<div class="hero-content">
+
+<div>
+
+<span class="tag">Pearl of the Indian Ocean</span>
+
+<h1>
+Discover The Soul Of Sri Lanka
+</h1>
+
+<p>
+Journey through ancient kingdoms, misty mountains,
+golden beaches, tea plantations and vibrant traditions.
+From Colombo to Ella, Galle to Sigiriya, every trip feels unforgettable.
+</p>
+
+<div class="hero-buttons">
+<a href="#destinations" class="btn-primary">Start Exploring</a>
+<a href="#culture" class="btn-secondary">Learn More</a>
+</div>
+
+</div>
+
+</header>
+
+<section class="section">
+
+<h2>Why Sri Lanka?</h2>
+
+<p class="center">
+Sri Lanka offers a unique blend of tropical beauty,
+ancient history, diverse wildlife and warm hospitality.
+From Sigiriya to Ella and Mirissa to Jaffna,
+every corner tells a story.
+</p>
+
+</section>
+
+<section id="destinations" class="section">
+
+<h2>Must Visit Destinations</h2>
+
+<div class="carousel-wrapper">
+
+<button class="arrow" onclick="slide(-1)">‹</button>
+
+<div class="carousel" id="gallery">
+
+<div class="place-card">
+<img src="https://i.pinimg.com/736x/3e/ba/5d/3eba5dc8546e09840ea4ce12e205506b.jpg" alt="Sigiriya rock fortress and surrounding gardens">
+<h3>Sigiriya</h3>
+<p>
+Ancient rock fortress and UNESCO World Heritage site.
+</p>
+</div>
+
+<div class="place-card">
+<img src="https://i.pinimg.com/1200x/a4/f0/41/a4f0418cd0e7e8fc2800902655040e03.jpg" alt="Ella train crossing Nine Arch Bridge in lush hills">
+<h3>Ella</h3>
+<p>
+Tea plantations, misty mountains and iconic train journeys.
+</p>
+</div>
+
+<div class="place-card">
+<img src="https://i.pinimg.com/1200x/d9/d3/1d/d9d31d6519b9d92a0078512eb8949bad.jpg" alt="Mirissa beach palm trees and sunset">
+<h3>Mirissa</h3>
+<p>
+Whale watching, palm-fringed beaches and sunset cruises.
+</p>
+</div>
+
+<div class="place-card">
+<img src="https://i.pinimg.com/736x/99/ef/39/99ef395445175ca6d9557cfeea29ff0a.jpg" alt="Kandy Temple and lake scenery">
+<h3>Kandy</h3>
+<p>
+Home of the sacred Temple of the Tooth and hill city charm.
+</p>
+</div>
+
+<div class="place-card">
+<img src="https://i.pinimg.com/736x/98/da/be/98dabedb3b8a3fbbdaac909aa3a57456.jpg" alt="Yala national park safari scene">
+<h3>Yala</h3>
+<p>
+One of Asia's best wildlife parks for leopards and elephants.
+</p>
+</div>
+
+</div>
+
+<button class="arrow" onclick="slide(1)">›</button>
+
+</div>
+
+</section>
+
+<section id="culture" class="section">
+
+<h2>Sri Lankan Culture</h2>
+
+<div class="grid">
+
+<div class="glass-card">
+<h3>Traditional Dance</h3>
+<p>
+Colorful Kandyan performances passed down generations.
+</p>
+</div>
+
+<div class="glass-card">
+<h3>Ancient Heritage</h3>
+<p>
+Historic kingdoms and sacred temples dating back centuries.
+</p>
+</div>
+
+<div class="glass-card">
+<h3>Festivals</h3>
+<p>
+Vibrant celebrations including Vesak and Esala Perahera.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="food" class="section">
+
+<h2>Local Favorites</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h3>Rice & Curry</h3>
+<p>National Favorite</p>
+</div>
+
+<div class="stat">
+<h3>Hoppers</h3>
+<p>Breakfast Classic</p>
+</div>
+
+<div class="stat">
+<h3>Kottu</h3>
+<p>Street Food Legend</p>
+</div>
+
+<div class="stat">
+<h3>Ceylon Tea</h3>
+<p>World Famous</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="wildlife" class="section">
+
+<h2>Wildlife Wonders</h2>
+
+<p class="center">
+Meet elephants, leopards, blue whales,
+sea turtles and hundreds of unique bird species.
+Sri Lanka is one of Asia's most biodiverse destinations.
+</p>
+
+</section>
+
+<footer>
+
+<h3>Explore Sri Lanka</h3>
+
+<p>
+Travel fan website celebrating the beauty,
+culture and heritage of Sri Lanka.
+</p>
+
+</footer>
+
+<script>
+
+function slide(direction){
+
+const gallery =
+document.getElementById("gallery");
+
+gallery.scrollBy({
+left: direction * 350,
+behavior: "smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
